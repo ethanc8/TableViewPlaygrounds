@@ -6,7 +6,8 @@
  A sample model object. A base abstract class (ATDesktopEntity) implements caching of a file URL. One concrete subclass implements the ability to have an array of children (ATDesktopFolderEntity). Another (ATDesktopImageEntity) represents an image suitable for the desktop wallpaper.
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 // KVO key path for thumbnail.
 extern NSString *const ATEntityPropertyNamedThumbnailImage;

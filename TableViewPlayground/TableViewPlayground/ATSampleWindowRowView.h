@@ -6,7 +6,8 @@
  ATSampleWindowRowView implementation. This class is used because the NIB has an ATSampleWindowRowView placed in it with a special key of NSTableViewRowViewKey. NSTableView first looks for a view with that key for the row view, if the delegate method tableView:rowViewForRow: is not used.
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 @interface ATSampleWindowRowView : NSTableRowView
 

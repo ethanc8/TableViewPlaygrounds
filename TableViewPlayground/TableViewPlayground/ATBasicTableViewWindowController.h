@@ -6,7 +6,8 @@
  Demonstrates the most basic dataSource/delegate implementation of a View Based NSTableView.
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 @interface ATBasicTableViewWindowController : NSWindowController
 

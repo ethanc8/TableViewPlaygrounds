@@ -6,7 +6,8 @@
  A controller used by the ATColorTableController to edit the color property.
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 @protocol ATColorTableControllerDelegate;
 

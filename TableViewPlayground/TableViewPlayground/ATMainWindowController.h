@@ -6,7 +6,8 @@
  The main window controller for choosing different test windows to open.
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 @interface ATMainWindowController : NSWindowController
 

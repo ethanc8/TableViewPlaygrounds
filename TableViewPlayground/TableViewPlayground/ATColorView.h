@@ -6,7 +6,8 @@
  A basic NSView subclass that supports having an animatable background color (NOTE: the animation only works when the view is layer backed).
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 @interface ATColorView : NSControl
 

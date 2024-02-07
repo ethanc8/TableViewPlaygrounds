@@ -6,7 +6,8 @@
  A simple subclass of NSTableRowView that introduces an objectValue property.
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 @interface ATObjectTableRowView : NSTableRowView {
 @private

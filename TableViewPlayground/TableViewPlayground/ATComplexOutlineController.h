@@ -6,7 +6,8 @@
  The main controller for the "Complex Outline View" example window.
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 @interface ATComplexOutlineController : NSWindowController
 

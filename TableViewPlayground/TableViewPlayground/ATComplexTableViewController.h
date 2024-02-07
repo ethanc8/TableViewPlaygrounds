@@ -6,7 +6,8 @@
  The basic controller for the demo app. An instance exists inside the MainMenu.xib file.
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 @interface ATComplexTableViewController : NSWindowController
 

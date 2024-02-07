@@ -6,7 +6,8 @@
  Main source code file for the project.
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 int main(int argc, char *argv[])
 {

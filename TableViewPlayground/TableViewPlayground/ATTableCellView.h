@@ -6,7 +6,8 @@
  A basic subclass of NSTableCellView that adds some properties strictly for allowing access to the items in code.
  */
 
-@import Cocoa;
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 @class ATColorView;
 
