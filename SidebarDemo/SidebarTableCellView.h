@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: AML
 /*
      File: SidebarTableCellView.h 
  Abstract: 
