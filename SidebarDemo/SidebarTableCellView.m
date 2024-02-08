@@ -53,7 +53,34 @@
 
 @implementation SidebarTableCellView
 
-@synthesize button = _button;
+// @synthesize button = _button;
+// https://stackoverflow.com/a/20207110
+- (id)initWithFrame:(NSRect)frameRect {
+  self = [super initWithFrame:frameRect];
+  [self setAutoresizingMask:NSViewWidthSizable];
+  NSImageView* iv = [[NSImageView alloc] initWithFrame:NSMakeRect(0, 6, 16, 16)];
+  NSTextField* tf = [[NSTextField alloc] initWithFrame:NSMakeRect(21, 6, 200, 14)];
+  NSButton* btn = [[NSButton alloc] initWithFrame:NSMakeRect(0, 3, 16, 16)];
+  [iv setImageScaling:NSImageScaleProportionallyUpOrDown];
+  [iv setImageAlignment:NSImageAlignCenter];
+  [tf setBordered:NO];
+  [tf setDrawsBackground:NO];
+  [[btn cell] setControlSize:NSSmallControlSize];
+  [[btn cell] setBezelStyle:NSInlineBezelStyle];
+  [[btn cell] setButtonType:NSMomentaryPushInButton];
+  [[btn cell] setFont:[NSFont boldSystemFontOfSize:10]];
+  [[btn cell] setAlignment:NSCenterTextAlignment];
+  [self setImageView:iv];
+  [self setTextField:tf];
+  [self addSubview:iv];
+  [self addSubview:tf];
+  [self addSubview:btn];
+  return self;
+}
+
+- (NSButton*)button {
+  return [[self subviews] objectAtIndex:2];
+}
 
 - (void)awakeFromNib {
     // We want it to appear "inline"
