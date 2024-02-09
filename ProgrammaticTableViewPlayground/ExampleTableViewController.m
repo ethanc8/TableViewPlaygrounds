@@ -16,6 +16,7 @@
     table.delegate = self;
     table.dataSource = self;
     // table.rowSizeStyle = NSTableViewRowSizeStyleSmall;
+    return self;
 }
 - (NSInteger) numberOfRowsInTableView: (NSTableView*)aTableView {
     return 1000;

@@ -14,9 +14,9 @@
 - (void) applicationDidFinishLaunching:(NSNotification*)aNotification {
     self->window1 = [[NSWindow alloc] initWithContentRect: (NSRect){
         .origin = (NSPoint){.x = 0, .y = 0}, .size = (NSSize){.width = 800, .height = 500}
-                                              } styleMask: NSWindowStyleMaskResizable | NSWindowStyleMaskTitled
+                                              } styleMask: NSWindowStyleMaskResizable | NSWindowStyleMaskTitled | NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable
                                                   backing: NSBackingStoreBuffered
-                                                    defer: YES];
+                                                    defer: NO];
     self->window1.contentView = controller1.scroll;
     [self->window1 makeKeyAndOrderFront: self];
     // This is different from the way the Swift example worked:

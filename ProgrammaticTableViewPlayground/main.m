@@ -3,11 +3,13 @@
 #import "ApplicationController.h"
 #import "ExampleTableViewController.h"
 
-int main(int argc, char** argv) {
+int main(int argc, const char** argv) {
     @autoreleasepool {
+        [NSApplication sharedApplication];
         ApplicationController* con1 = [[ApplicationController alloc] init];
         NSApp.delegate = con1;
-        [NSApp run];
-        RELEASE(con1);
+        return NSApplicationMain(argc, argv);
+        // [NSApp run];
+        // RELEASE(con1);
     }
 }
