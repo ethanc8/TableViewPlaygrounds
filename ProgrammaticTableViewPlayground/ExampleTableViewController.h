@@ -11,4 +11,5 @@
          viewForTableColumn:(NSTableColumn*)aTableColumn 
                         row:(NSInteger)rowIndex;
 - (NSScrollView*) scroll;
+- (NSTableView*) table;
 @end

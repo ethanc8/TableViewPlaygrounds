@@ -44,4 +44,7 @@
 - (NSScrollView*) scroll {
     return self->scroll;
 }
+- (NSTableView*) table {
+    return self->table;
+}
 @end
