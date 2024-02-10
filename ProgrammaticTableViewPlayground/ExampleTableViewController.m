@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
+#include "Foundation/NSObjCRuntime.h"
 #import <AppKit/AppKit.h>
 #import "ExampleTableViewController.h"
 
@@ -19,11 +20,15 @@
     return self;
 }
 - (NSInteger) numberOfRowsInTableView: (NSTableView*)aTableView {
+    NSLog(@"Called -[ExampleTableViewController numberOfRowsInTableView: %@]", aTableView);
     return 1000;
 }
 - (NSView*)       tableView:(NSTableView*)tableView
          viewForTableColumn:(NSTableColumn*)aTableColumn 
                         row:(NSInteger)rowIndex {
+    NSLog(@"Called -[ExampleTableViewController tableView: %@"
+           "                           viewForTableColumn: %@]"
+           "                                          row: %d", tableView, aTableColumn, rowIndex);
     NSString* VIEW_ID1 = @"VIEW_ID1";
     NSView* v1 = [tableView makeViewWithIdentifier: VIEW_ID1 owner: nil];
     if(v1) {
