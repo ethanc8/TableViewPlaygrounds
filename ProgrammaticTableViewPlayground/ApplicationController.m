@@ -17,7 +17,7 @@
                                               } styleMask: NSWindowStyleMaskResizable | NSWindowStyleMaskTitled | NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable
                                                   backing: NSBackingStoreBuffered
                                                     defer: NO];
-    self->window1.contentView = controller1.scroll;
+    self->window1.contentView = controller1.table;
     [self->window1 makeKeyAndOrderFront: self];
     // This is different from the way the Swift example worked:
     //   let window1 = NSWindow()
