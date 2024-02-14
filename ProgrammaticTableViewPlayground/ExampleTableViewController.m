@@ -24,16 +24,16 @@
     return self;
 }
 - (NSInteger) numberOfRowsInTableView: (NSTableView*)aTableView {
-    NSLog(@"Called -[ExampleTableViewController numberOfRowsInTableView: %@]", aTableView);
+    // NSLog(@"Called -[ExampleTableViewController numberOfRowsInTableView: %@]", aTableView);
     return 1000;
 }
 - (NSView*)       tableView:(NSTableView*)tableView
          viewForTableColumn:(NSTableColumn*)aTableColumn 
                         row:(NSInteger)rowIndex {
-    NSLog(@"Called " "\n"
-           "       -[ExampleTableViewController tableView: %@" "\n"
-           "                           viewForTableColumn: %@" "\n"
-           "                                          row: %ld]", tableView, aTableColumn, (long)rowIndex);
+    // NSLog(@"Called " "\n"
+    //        "       -[ExampleTableViewController tableView: %@" "\n"
+    //        "                           viewForTableColumn: %@" "\n"
+    //        "                                          row: %ld]", tableView, aTableColumn, (long)rowIndex);
     NSString* VIEW_ID1 = @"VIEW_ID1";
     NSView* v1 = [tableView makeViewWithIdentifier: VIEW_ID1 owner: nil];
     if(v1) {
