@@ -13,8 +13,11 @@
     table = [[NSTableView alloc] init];
     table->_viewBased = YES;
     NSTableColumn* tc1 = [[NSTableColumn alloc] initWithIdentifier: @"NAME_COLUMN"];
-    // tc1.title = @"Name";
+    tc1.title = @"Name";
     [table addTableColumn: tc1];
+    NSTableColumn* tc2 = [[NSTableColumn alloc] initWithIdentifier: @"DESCRIPTION_COLUMN"];
+    tc2.title = @"Description";
+    [table addTableColumn: tc2];
     table.delegate = self;
     table.dataSource = self;
     // table.rowSizeStyle = NSTableViewRowSizeStyleSmall;
