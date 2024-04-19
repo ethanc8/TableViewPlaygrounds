@@ -29,9 +29,10 @@
     //   window1 = [[NSWindow alloc] init];
     //   window1.contentView = controller1.scroll;
     //   window1.styleMask = NSWindowStyleMaskResizable | NSWindowStyleMaskTitled;
-    //   window1.frame = (NSRect){
+    //   [window1 setFrame: (NSRect){
     //       .origin = (NSPoint){.x = 0, .y = 0}, .size = (NSSize){.width = 800, .height = 500}
-    //                           }
+    //                              }
+    //             display: NO];
     //   [window1 makeKeyAndOrderFront: self];
     // However, -[NSWindow setStyleMask:] and -[NSWindow setFrame:] are unimplemented.
 }
