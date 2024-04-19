@@ -11,7 +11,7 @@
     scroll.hasVerticalScroller = true;
 
     table = [[NSTableView alloc] init];
-    table->_viewBased = YES;
+    // table->_viewBased = YES;
     NSTableColumn* tc1 = [[NSTableColumn alloc] initWithIdentifier: @"NAME_COLUMN"];
     tc1.title = @"Name";
     [table addTableColumn: tc1];
